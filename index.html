@@ -80,8 +80,9 @@ td.c-name,td.c-biz{text-align:left}
 input[type=checkbox]{width:16px;height:16px;cursor:pointer;accent-color:#1D9E75}
 td.c-taxamt input,td.c-fee input{width:100%;background:transparent;border:none;font-size:12px;color:#888;outline:none;font-family:inherit;text-align:right}
 td.c-taxamt input:focus,td.c-fee input:focus{color:#1a1a1a}
-/* 메모: 평상시 연하게, 입력(focus)시에만 진하게 */
-td.c-memo input{width:100%;background:transparent;border:none;font-size:12px;color:#bbb;outline:none;font-family:inherit;font-weight:400}
+/* 메모: 입력된 글자는 잘 보이게, placeholder만 연하게, focus시 더 진하게 */
+td.c-memo input{width:100%;background:transparent;border:none;font-size:12px;color:#555;outline:none;font-family:inherit;font-weight:500}
+td.c-memo input::placeholder{color:#ccc;font-weight:400}
 td.c-memo input:focus{color:#1a1a1a;font-weight:600}
 .btn-del{background:none;border:none;cursor:pointer;color:#ccc;font-size:14px;padding:2px;line-height:1}
 .btn-del:hover{color:#e24b4a}
